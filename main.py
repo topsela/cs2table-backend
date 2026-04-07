@@ -22,7 +22,7 @@ BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL, "http://localhost:5173"],
+    allow_origins=["https://cs2table.com", "https://www.cs2table.com", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
